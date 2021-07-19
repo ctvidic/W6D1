@@ -19,12 +19,13 @@ are children of an Unordered Lsit element */
 ul li a, figcaption a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 /* This selector selects only IMMEDIATE (1 level deep) image element children
 of the header element */
 header > img {
-  width: 100px;
+  width: auto;
 }
 
 /* Selects all elements with the class attribute "ingredients-list" */
@@ -32,6 +33,10 @@ header > img {
 
   /* The list style property is shorthand for multiple list-style properties*/
   list-style: square inside;
+}
+
+.ingredients-list li {
+  margin: 15px 0;
 }
 
 ol {
@@ -72,3 +77,55 @@ h2 + .user_review {
     border-top: 1px solid black;
 }
 
+a {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  flex-direction: row !important;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.main--section {
+  width: 700px;
+}
+
+aside {
+  width: 180px;
+  margin-right: 15px;
+}
+
+.something {
+  display: flex;
+  flex-direction: row;
+}
+
+ol li {
+  margin: 15px 0;
+}
+
+#review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#expertise {
+  margin: 30px 0;
+}
+
+#review,
+#name, 
+textarea {
+  width: 5rem;
+}
